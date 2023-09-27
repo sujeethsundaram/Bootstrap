@@ -1,0 +1,11 @@
+.navbar-nav li a{
+    color:white;
+}
+.nav-item{
+    padding-left: 30px;
+    padding-right: 30px ;
+    }
+.col{
+    float: right;
+    margin: 0px;
+}
