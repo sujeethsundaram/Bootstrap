@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Task 8</title>
+    <style>
+        table{
+            border-color: rgb(0, 0, 0);
+            background-origin: padding-box;
+            border-width: 2px;
+            width: 800px;
+            border-spacing: 9px;
+            margin-top: -1%;
+        }
+        h1{
+            color: blue;
+            text-align: center;
+        }
+        textarea{
+        width:360px;
+        height: 80px;
+        }
+        button{
+            justify-content: center;
+            flex: content;
+            background: #f93a3a;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: underline;
+        }
+        #contact_submit{
+            text-align: center;
+        }
+        .error{
+            margin-left: 10px;
+            color: red;
+        }		
+    </style>
+    <script src="js-task8.js"></script>
+</head>
+<body style="font-family: 'Times New Roman', Times, serif; background: radial-gradient(ellipse at top, #f0e170,#ca26af79, transparent);padding-bottom: 20%;">
+        <h1>Registration form</h1>
+        <form id="contact" method="post" action="#" onsubmit="return validateForm();">
+        <table align="center">
+            <tr>
+                <td align="right" style="font-weight: bold;" width="200px"><label for="firstName">First Name</label></td>
+                <td><input type="text" id="firstName" size="50"/></td>
+                <span class="error"></span>
+            </tr>
+            <tr>
+                <td align="right" style="font-weight: bold;" width="200px"><label for="lastName">Last Name</label</td>
+                <td><input type="text" id="lastName" size="50"/></td>
+                <span class="error"></span>
+            </tr>
+            <tr>
+                <td align="right" style="font-weight: bold;" width="200px"><label for="email">Email</label></td>
+                <td><input type="email" id="email" size="50"/></td>
+                <span class="error"></span>
+            </tr>
+            <tr>
+                <td align="right" style="font-weight: bold;" width="200px"><label for="password">Password</label></td>
+                <td><input type="password" id="password" size="50"/></td>
+                <span class="error"></span>
+            </tr>
+            <tr>
+                <td align="right" style="font-weight: bold;" width="200px"><label for="confirmpassword">Re-enter Password</label></td>
+                <td><input type="password" id="confirmpassword" size="50"/></td>
+                <span class="error"></span>
+            </tr>
+            <tr>
+                <td rowspan="2" align="right" style="font-weight: bold;" width="200px"><label for="gender">Gender</label></td>
+                <td><input type="radio" id="male" name="gender" />
+                    <label for="male">Male</label>
+                </td>
+            </tr>
+            <tr><td><input type="radio" id="female" name="gender" />
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="font-weight: bold;" width="200px"><label for="age">Age</label></td>
+                <td><input type="text" id="age" size="50"/></td>
+                <span class="error"></span>
+            </tr>
+            <tr>
+                <td align="right" style="font-weight: bold;" width="200px"><label for="number">Phone Number</label></td>
+                <td><input type="text" id="number" size="50"/></td>
+                <span class="error"></span>
+            </tr>
+            <tr>
+                <td align="right" style="font-weight: bold;" width="200px"><label for="address">Address</label></td>
+                <td><textarea id="address"></textarea></td>
+                <span class="error"></span>
+            </tr>
+            <tr>
+                <td align="right" style="font-weight: bold;" width="200px"><label for="state">State</label></td>
+                <td><input type="text" id="state" size="50"/></td>
+                <span class="error"></span>
+            </tr>
+            <tr>
+                <td align="right" style="font-weight: bold;" width="200px"><label for="country">Country</label></td>
+                <td><select name="country">
+                    <option value="">Choose your country</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="TamilNadu">Tamil Nadu</option>
+                    <option value="other">Other</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td align="right" style="font-weight: bold;" width="200px">Languages known</td>
+                <td>
+                    <input type="checkbox" id="english" />
+                    <label for="english">English</label>
+                    <input type="checkbox" id="kannada" />
+                    <label for="kannada">Kannada</label>
+                    <input type="checkbox" id="Hindi" />
+                    <label for="hindi">Hindi</label>
+                    <input type="checkbox" id="telugu" />
+                    <label for="telugu">Telugu</label>
+                </td>
+            </tr>
+            <tr><td colspan="2">
+                <input type="checkbox" id="declaration"/><label for="declaration">  Hereby I declare all the given details are true</label>
+            </td></tr>
+            <tr><td align="right" colspan="2">
+                Log in to <span><A id="ethnus" href="https://ethnus.com/" target="_blank">Ethnus</A></span> website
+            </td></tr>
+        </table>
+        <br>
+        <div id="contact_submit">
+        <button type="submit" value="submit">REGISTER</button>
+        </div>
+    </form>
+</body>
+</html>

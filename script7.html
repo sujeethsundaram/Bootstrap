@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Task-7 Train </title>
+    <style> 
+    div{
+      width: 313px;
+      height: 181px;
+      background-image: url(train.png);
+      background-position: center;
+      background-size:cover;
+      position: relative;
+      animation: mymove 10s infinite;
+      animation-play-state: paused;
+    }
+
+    @keyframes mymove {
+      from {left: 0px;} 
+      to {left: 1200px;}
+    }
+
+</style>
+</head>
+
+<body>
+
+<div id="train"></div>
+
+<h1>Click the following buttons to handle the animation</h1>
+<button onclick="PlayFunc()">Start</button>
+<button onclick="PauseFunc()">Stop</button>
+
+<script>
+function PlayFunc() {
+  document.getElementById("train").style.animationPlayState = "running";
+}
+function PauseFunc() {
+  document.getElementById("train").style.animationPlayState = "paused";
+}
+</script>
+
+</body>
+</html>
